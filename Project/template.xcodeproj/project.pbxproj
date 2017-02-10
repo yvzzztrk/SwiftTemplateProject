@@ -29,6 +29,17 @@
 			name = SwiftLint;
 			productName = SwiftLint;
 		};
+		D7316F841E4DB77000A06E03 /* SwiftLint Warnings */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7316F861E4DB77000A06E03 /* Build configuration list for PBXAggregateTarget "SwiftLint Warnings" */;
+			buildPhases = (
+				D7316F851E4DB77000A06E03 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "SwiftLint Warnings";
+			productName = SwiftLint;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -471,6 +482,7 @@
 				D7316F2E1E4D915700A06E03 /* templateProd */,
 				D7316EFF1E4D8FA300A06E03 /* Synx */,
 				D7316F0D1E4D90C100A06E03 /* SwiftLint */,
+				D7316F841E4DB77000A06E03 /* SwiftLint Warnings */,
 			);
 		};
 /* End PBXProject section */
@@ -747,6 +759,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "TAGS=\"TODO:|FIXME:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+		D7316F851E4DB77000A06E03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${SRCROOT}/../SwiftLint\"\n\"${PODS_ROOT}\"/SwiftLint/swiftlint";
 		};
 		D99776A80772AA97D307FEF8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1149,6 +1174,22 @@
 			};
 			name = Release;
 		};
+		D7316F871E4DB77000A06E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PODS_ROOT = "${SRCROOT}/../CocoaPods/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7316F881E4DB77000A06E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PODS_ROOT = "${SRCROOT}/../CocoaPods/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1211,6 +1252,15 @@
 			buildConfigurations = (
 				D7316F381E4D915700A06E03 /* Debug */,
 				D7316F391E4D915700A06E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7316F861E4DB77000A06E03 /* Build configuration list for PBXAggregateTarget "SwiftLint Warnings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7316F871E4DB77000A06E03 /* Debug */,
+				D7316F881E4DB77000A06E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,7 +19,7 @@ open class MockHttpServer: HttpServer {
         self["/api/:path"] = shareFilesFromDirectory(mockServerFolder)
 
         do {
-            try self.start(3000)
+            try self.start(3_000)
         } catch SocketError.acceptFailed(let message) {
             debugPrint(message)
         } catch {

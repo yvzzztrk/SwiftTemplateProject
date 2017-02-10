@@ -76,7 +76,7 @@ extension AppDelegate {
     }
 
     func initializeReachability() {
-        reachability = Reachability.init()
+        reachability = Reachability()
     }
 
     // MARK: -
@@ -134,7 +134,7 @@ extension AppDelegate {
     }
 
     class func showAlert(title: String, message: String, actions: [UIAlertAction]? = [UIAlertAction(title: "OK", style: .default, handler: nil)]) {
-        let alertViewController = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        let alertViewController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         actions?.forEach({ (action) in
             alertViewController.addAction(action)
         })
