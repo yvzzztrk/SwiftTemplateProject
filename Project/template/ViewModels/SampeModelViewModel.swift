@@ -10,11 +10,11 @@ import Foundation
 import PromiseKit
 
 struct SampleModelViewModel {
-    
+
     let sampleStringInfo: String
-    
+
     init(sampleModel: SampleModel) {
-        
+
         sampleStringInfo = sampleModel.sampleString
     }
 }

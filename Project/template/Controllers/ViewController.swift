@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         sampleRequset(showsHUD: false, showsError: false)
     }
 
-    func sampleRequset (showsHUD: Bool, showsError: Bool){
+    func sampleRequset (showsHUD: Bool, showsError: Bool) {
         firstly { () -> Promise<SampleModelViewModel> in
             return Router.SampleModelRequest.promise().toViewModel().wrapWithHUD(showsHUD: showsHUD, showsError: showsError)
             }.then { (viewModel) -> Void in

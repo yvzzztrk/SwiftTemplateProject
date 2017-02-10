@@ -291,16 +291,16 @@
 			children = (
 				D7316ED11E4D8E4D00A06E03 /* AppDelegate.swift */,
 				D7316ED81E4D8E4D00A06E03 /* Assets.xcassets */,
+				D7316F7B1E4DA0D200A06E03 /* Dev-Bridging-Header.h */,
 				D7316F3E1E4D91D200A06E03 /* InfoDev.plist */,
 				D7316F3C1E4D91CD00A06E03 /* InfoMock.plist */,
 				D7316F401E4D91DC00A06E03 /* InfoProd.plist */,
 				D7316F421E4D91E100A06E03 /* InfoUAT.plist */,
+				D7316F7A1E4DA0D200A06E03 /* Mock-Bridging-Header.h */,
 				D7316F611E4D999900A06E03 /* MockData */,
 				D7316F781E4D9D0400A06E03 /* MockHttpServer.swift */,
-				D7316F7A1E4DA0D200A06E03 /* Mock-Bridging-Header.h */,
-				D7316F7B1E4DA0D200A06E03 /* Dev-Bridging-Header.h */,
-				D7316F7C1E4DA0D200A06E03 /* UAT-Bridging-Header.h */,
 				D7316F7D1E4DA0D200A06E03 /* Prod-Bridging-Header.h */,
+				D7316F7C1E4DA0D200A06E03 /* UAT-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
