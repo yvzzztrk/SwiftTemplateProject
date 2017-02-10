@@ -1,0 +1,5 @@
+.DS_Store
+Project/template.xcodeproj/xcuserdata
+Project/template.xcodeproj/project.xcworkspace/xcuserdata
+CocoaPods/template.xcworkspace/xcuserdata
+CocoaPods/Pods/Pods.xcodeproj/xcuserdata
