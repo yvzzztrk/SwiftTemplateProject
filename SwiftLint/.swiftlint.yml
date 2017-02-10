@@ -1,0 +1,12 @@
+included: # paths to include during linting. `--path` is ignored if present.
+  - ../Project/template
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - ../Project/template/Models
+  
+opt_in_rules:
+  - empty_count
+type_body_length: 400
+function_body_length: 800
+force_cast: warning
+force_try: warning
+line_length: 250

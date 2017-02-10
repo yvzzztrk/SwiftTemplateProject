@@ -1,0 +1,29 @@
+project '../Project/template.xcodeproj'
+platform :ios, '9.0'
+use_frameworks!
+
+def default_pods
+    pod 'SwiftLint'
+    pod 'Alamofire', '~> 4.0'
+    pod 'PromiseKit', '~> 4.0'
+    pod 'PromiseKit/OMGHTTPURLRQ'
+    pod 'PKHUD', '~> 4.0'
+    pod 'ReachabilitySwift', '~> 3'
+end
+
+target 'templateMock' do
+    default_pods
+    pod 'Swifter', '~> 1.3.2' # HTTP Server for mock data
+end
+
+target 'templateDev' do
+    default_pods
+end
+
+target 'templateUAT' do
+    default_pods
+end
+
+target 'templateProd' do
+    default_pods
+end

@@ -1,0 +1,6 @@
+framework module Pods_templateMock {
+  umbrella header "Pods-templateMock-umbrella.h"
+
+  export *
+  module * { export * }
+}
