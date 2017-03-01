@@ -53,9 +53,7 @@ extension Dictionary where Key : ExpressibleByStringLiteral, Value : AnyObject {
 }
 
 struct Localize {
-
     struct Error {
         static let Generic = NSLocalizedString("A problem occured, please try again.", comment: "A problem occured, please try again.")
     }
-
 }

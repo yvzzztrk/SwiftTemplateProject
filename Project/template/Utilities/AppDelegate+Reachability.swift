@@ -42,7 +42,7 @@ extension AppDelegate: ReachabilityDelegate {
 
     func whenUnReachable() {
         DispatchQueue.main.async {
-            //TODO: when reachable
+            //TODO: when unreachable
         }
     }
 
